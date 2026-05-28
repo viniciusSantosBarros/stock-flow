@@ -1,0 +1,16 @@
+<h1> Mostrar produto </h1>
+<hr>
+
+    <% if notice %>
+        <p> <%= notice %> </p>
+    <% end %>
+
+        <p> Id: <%= @product.id %> </p>
+        <p> Nome: <%= @product.name %> </p>
+        <p> Preço: <%= @product.price %> </p>
+        <p> Quantidade: <%= @product.quantity %> </p>
+        <p> Criado em: <%= @product.created_at %> </p>
+        <p> Atualizado em: <%= @product.updated_at %> </p>
+    <hr>
+
+<%= link_to "ver estoque", products_path %>
