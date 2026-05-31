@@ -13,6 +13,8 @@ O **StockFlow** é uma aplicação CRUD para controle de produtos em estoque. Pe
 - **SQLite3**
 - **Hotwire** (Turbo + Stimulus)
 - **PWA** (Service Worker + Manifest)
+- **Bootstrap** 5.3.8
+- **Font Awesome** 6.7.2
 
 ## Funcionalidades
 
