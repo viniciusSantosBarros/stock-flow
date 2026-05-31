@@ -13,17 +13,30 @@
     </div>
 <% end %>
 
-<%= form_with model: product do |f| %>
-    <%= f.label  :name %>
-    <%= f.text_field :name %>
+    <div id="form" class="text-center">
+        <%= form_with model: product do |f| %>
 
-    <%= f.label :price %>
-    <%= f.number_field :price %>
+            <p>
+                <%= f.label :name %>
+                <%= f.text_field :name, class: "form-control w-75 m-auto" %>
+            </p>
 
-    <%= f.label :quantity %>
-    <%= f.number_field :quantity %>
+            <p>
+                <%= f.label :price %>
+                <%= f.number_field :price, class: "form-control w-75 m-auto" %>
+            </p>
 
-    <%= f.submit "Salvar" %>
-<% end %>
+            <p>
+                <%= f.label :quantity %>
+                <%= f.number_field :quantity, class: "form-control w-75 m-auto" %>
+            </p>
 
-<%= link_to "ver estoque", products_path %>
+            <%= f.submit "Salvar", class: "btn btn-primary" %>
+        <% end %>
+    </div>
+
+<div class="row">
+    <div class="col-1 m-auto mt-5">
+        <%= link_to "ver estoque", products_path, class: "btn btn-primary m-auto" %>
+    </div>
+</div>
